@@ -31,6 +31,20 @@ Checkout --> [six2dez](https://github.com/six2dez/)
 
 ### Medium scope
 
+
+Information disclosure
+```bash
+For multiple target
+ffuf -w Infodisclosure_Sensitive-list-1.txt:FUZZ -w subdomain.txt:URL -u URLFUZZ -mc 200 -of csv -o ffuf-result.txt
+
+See The Result: cat ffuf-result.txt | awk -F ‘,’ ‘{print $3}’
+
+for single target
+
+ffuf -w Infodisclosure_Sensitive-list-1.txt -mc 200 -u un.org/FUZZ
+```
+
+
 * [ ] [Enumerate subdomains](../recon/subdomain-enum/) \([subfinder](https://github.com/projectdiscovery/subfinder), [assetfinder](https://github.com/tomnomnom/assetfinder), [amass](https://github.com/OWASP/Amass), [sudomy](https://github.com/Screetsec/Sudomy), [crobat](https://github.com/cgboal/sonarsearch), [SubDomainizer](https://github.com/nsonaniya2010/SubDomainizer)\)
 * [ ] Permute subdomains \([dnsgen](https://github.com/ProjectAnte/dnsgen)\)
 * [ ] Subdomain bruteforce \([shuffledns](https://github.com/projectdiscovery/shuffledns), [subbrute](https://github.com/TheRook/subbrute)\)
