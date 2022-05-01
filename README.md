@@ -44,6 +44,12 @@ for single target
 ffuf -w Infodisclosure_Sensitive-list-1.txt -mc 200 -u un.org/FUZZ
 ```
 
+p4:-
+
+	Sensitive Data Exposure	EXIF Geolocation Data Not Stripped From Uploaded Images
+  Sensitive Data Exposure	Visible Detailed Error/Debug Page	Detailed Server Configuration
+  Insufficient Security Configurability	No Password Policy
+  erver Security Misconfiguration	Missing Secure or HTTPOnly Cookie Flag	Session Token
 
 * [ ] [Enumerate subdomains](../recon/subdomain-enum/) \([subfinder](https://github.com/projectdiscovery/subfinder), [assetfinder](https://github.com/tomnomnom/assetfinder), [amass](https://github.com/OWASP/Amass), [sudomy](https://github.com/Screetsec/Sudomy), [crobat](https://github.com/cgboal/sonarsearch), [SubDomainizer](https://github.com/nsonaniya2010/SubDomainizer)\)
 * [ ] Permute subdomains \([dnsgen](https://github.com/ProjectAnte/dnsgen)\)
