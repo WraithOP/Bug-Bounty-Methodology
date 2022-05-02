@@ -29,6 +29,13 @@ Checkout --> [six2dez](https://github.com/six2dez/)
 * [ ] Run automated scanner \([nuclei](https://github.com/projectdiscovery/nuclei)\)
 * [ ] Test CORS \([CORScanner](https://github.com/chenjj/CORScanner), [corsy](https://github.com/s0md3v/Corsy)\)
 
+
+dorking :-
+1.) .env
+2.) .git
+
+--> `site:*.target.com inurl:/.env indexof /`
+
 ### Medium scope
 
 
